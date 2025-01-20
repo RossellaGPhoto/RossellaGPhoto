@@ -1,12 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rossella Gallo Photography</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/logo-icon.png">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a demonstration of GitHub Pages.</p>
+    <header class="header">
+        <div class="logo-container">
+            <a href="index.html"><img src="img/logo-large.png" alt="Logo" class="logo"></a>
+            <svg class="menu-icon" alt="Menu" id="menu-toggle" width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.25C0 .56.556 0 1.25 0h17.5C19.44 0 20 .555 20 1.25c0 .69-.556 1.25-1.25 1.25H1.25C.56 2.5 0 1.945 0 1.25zm0 11.5c0-.69.556-1.25 1.25-1.25h17.5c.69 0 1.25.555 1.25 1.25 0 .69-.556 1.25-1.25 1.25H1.25C.56 14 0 13.445 0 12.75zM0 7c0-.69.556-1.25 1.25-1.25h17.5c.69 0 1.25.555 1.25 1.25 0 .69-.556 1.25-1.25 1.25H1.25C.56 8.25 0 7.695 0 7z" fill-rule="evenodd"></path></svg>
+        </div>
+        <nav class="nav" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="submenu-parent">
+                    <a class="submenu-parent-title" href="#Portfolio">Portfolio</a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="portfolio/engagement.html">Engagement</a></li>
+                        <li class="submenu-item"><a href="portfolio/weddings.html">Weddings</a></li>
+                        <li class="submenu-item"><a href="portfolio/events.html">Events</a></li>
+                        <li class="submenu-item"><a href="portfolio/portrait.html">Portrait</a></li>
+                      </ul>
+                </li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="description-container">
+        <p class="description">
+            Specialized in capturing candid, precious memories.<br> 
+            Whether it's wedding or portrait photography, my focus is on preserving the fun, authentic, and unapologetically happy moments that reflect your unique story. 
+        </p>
+    </div>
+
+    <h1>• Brisbane - Gold Coast - Sunshine Coast - Ipswich •</h1>
+    
+    <div class="photo-gallery">
+        <img loading="lazy" src="img/Weddings/1.webp" alt="photo-1">
+        <img loading="lazy" src="img/Engagement/1.webp" alt="photo-2">
+        <img loading="lazy" src="img/Engagement/15.webp" alt="photo-3">
+        <img loading="lazy" src="img/Events/1.webp" alt="photo-4">
+        <img loading="lazy" src="img/Engagement/14.webp" alt="photo-5">
+        <img loading="lazy" src="img/Portraits/2.webp" alt="photo-6">
+    </div>
+
+    <div class="flowers-container">
+        <img class="flower" id="flower-1" src="img/decorations/flower.png">
+        <img class="flower" id="flower-2" src="img/decorations/flower.png">
+        <img class="flower" id="flower-3" src="img/decorations/flower.png">
+        <img class="flower" id="flower-4" src="img/decorations/flower.png">
+        <img class="flower" id="flower-5" src="img/decorations/flower.png">
+        <img class="flower" id="flower-6" src="img/decorations/flower.png">
+    </div>
+    <footer class="footer">
+        <p>© Rossella Gallo Photography</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,181 @@
+/* Styles */
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #826a50; 
+}
+
+a:active {
+    color: #826a50;
+}
+
+.flower#flower-1 {
+    height: 307px;
+    top: -40px;
+    rotate: 51deg;
+    left: -59px;
+    opacity: 0.3;
+}
+
+.flower#flower-2 {
+    height: 154px;
+    top: -53px;
+    rotate: 128deg;
+    right: 821px;
+}
+
+.flower#flower-3 {
+    height: 265px;
+    top: -36px;
+    rotate: 95deg;
+    opacity: 0.3;
+    right: 50px;
+}
+
+.flower#flower-4 {
+    height: 293px;
+    bottom: 5px;
+    rotate: 223deg;
+    right: -71px;
+    position: fixed;
+}
+
+.flower#flower-5 {
+    height: 208px;
+    bottom: 16px;
+    rotate: 304deg;
+    position: fixed;
+    left: 10px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image: url('../img/decorations/text-back.png');
+    background-size: 346px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    overflow: visible;
+}
+.title {
+    font-family: "Mea Culpa", serif;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 500px;
+    text-align: center;
+    color: #826a50;
+    z-index: 1;
+    font-size: 66px;
+    margin: 0;
+    line-height: 1;
+    overflow: visible;
+}
+
+.title-back {
+    position: absolute;
+    z-index: 0;
+}
+
+/* Flex container for contact list */
+.contact-list {
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 20px;
+        list-style-type: none;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-bottom: auto;
+  }
+
+  /* Styling for each contact item */
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Styling for the contact logo */
+  .contact-logo {
+    width: 24px; /* Adjust size as needed */
+    height: auto;
+  }
+
+  /* Styling for the contact text */
+  .contact-text{
+    font-size: 20px;
+    word-wrap: break-word;
+    white-space: nowrap;
+  }
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 54px;
+        padding: 15px;
+    }
+
+    .contact-list {
+      flex-direction: column; /* Stack contact items vertically */
+      align-items: center; /* Center align items */
+    }
+
+    .contact-item {
+      flex-direction: column; /* Stack the logo and text vertically */
+      align-items: center; /* Center align logo and text */
+      gap: 5px; /* Reduce space between logo and text */
+    }
+
+    /* Adjust logo size for mobile (optional) */
+    .contact-logo {
+      width: 30px; /* Larger size for mobile if needed */
+    }
+
+    .flower#flower-1 {
+        height: 146px;
+        top: -31px;
+        rotate: 37deg;
+        left: -51px;
+    }
+    
+    .flower#flower-2 {
+        height: 193px;
+        top: 122px;
+        rotate: 222deg;
+        right: -59px;
+        position: fixed;
+        opacity: 0.3;
+    }
+    
+    .flower#flower-3 {
+        height: 193px;
+        top: 329px;
+        rotate: -46deg;
+        opacity: 0.3;
+        right: auto;
+        left: -76px;
+    }
+    
+    .flower#flower-4 {
+        height: 120px;
+        top: auto;
+        rotate: 244deg;
+        right: -49px;
+        position: fixed;
+        bottom: -21px;
+    }
+    
+    .flower#flower-5 {
+        visibility: hidden;
+    }
+  }
+
+@media screen and (max-width: 480px) {
+    
+}
+

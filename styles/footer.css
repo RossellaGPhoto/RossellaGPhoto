@@ -1,0 +1,12 @@
+.footer {
+    color: #826a50;
+    font-family: news-cycle, sans-serif;
+    font-size: 9px;
+    font-weight: normal;
+    text-align: center;
+    padding: 20px 0;
+    clear: both;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}

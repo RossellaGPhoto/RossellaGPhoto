@@ -1,0 +1,302 @@
+/* Styles */
+
+.flower#flower-1 {
+    height: 282px;
+    top: -44px;
+    rotate: 51deg;
+    left: -84px;
+    opacity: 0.3;
+    position: fixed;
+    z-index: -1;
+}
+
+.flower#flower-2 {
+    height: 228px;
+    rotate: 223deg;
+    right: -79px;
+    position: fixed;
+    opacity: 0.3;
+    bottom: -29px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image: url('../img/decorations/text-back.png');
+    background-size: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 42px;
+}
+
+.title-container#first {
+    margin-top: 10px;
+}
+
+.title-container#second {
+    background-size: 240px;
+    background-image: none;
+}
+
+.title-container#third {
+    background-size: 280px;
+    z-index: -2;
+}
+
+.title-container#fourth {
+    background-size: 240px;
+    background-image: none;
+}
+
+
+.title {
+    font-family: "Mea Culpa", serif;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 480px;
+    text-align: center;
+    color: #826a50;
+    z-index: 1;
+    font-size: 64px;
+    margin: 0;
+}
+
+.title#addon {
+    font-size: 50px;
+}
+
+.title-back {
+    position: absolute;
+    z-index: 0;
+}
+
+.prices-description-container {
+    display: flex;
+    width: 71%;
+    justify-content: center;
+    align-items: center;
+}
+
+.prices-description ul{
+    flex-direction: column;
+    display: flex;
+    gap: 5px;
+}
+
+.prices-description li {
+    text-align: justify;
+    margin: 5px;
+}
+
+.prices-description p{
+    text-align: center;
+}
+
+.prices-list-container {
+    display: flex;
+    gap: 60px; /* Space between containers */
+    margin-top: 30px;
+    flex-wrap: nowrap;
+}
+
+.prices-list-container#second .box {
+    width: 270px;
+    height: 260px;
+}
+
+.prices-list-container#second .box h2 {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 19px;
+    margin: 20px 0;
+}
+
+.prices-description-wedding {
+    width: 71%;
+}
+.prices-description-wedding p {
+    text-align: center;
+    margin: 5px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center;
+    justify-content: center;
+    width: 186px;
+    height: 195px;
+    background: #f6e7d7; 
+    border-radius: 51px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 25%;
+}
+
+.box h2 {
+    font-family: "Mea Culpa", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #826a50;
+    z-index: 1;
+    font-size: 54px;
+    margin: 0;
+    line-height: 0.8;
+    width: 250px;
+    position: relative;
+    top: -5px;
+    margin-bottom: 9px;
+}
+
+.box .from {
+    margin: 0;
+    font-size: 12px;
+}
+.box .price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box .description {
+    margin: 18px 0 27px 0;
+    font-size: 18px;
+}
+
+.box .description ul {
+
+    list-style-type: none;  
+    padding: 0;  
+    text-align: left;     
+    margin: 0;
+}
+
+.box .description ul li::before {
+    content: "•"; 
+    margin-right: 10px;  
+}
+
+.list-container {
+    display: flex;          
+    gap: 50px;      
+    margin-top: 20px;      
+}
+
+.list-container ul{
+    flex-direction: column;
+    display: flex;
+    gap: 5px;
+}
+
+.list-container ul li {
+    font-size: 18px;
+    text-align: left;
+}
+
+.arrow {
+    position: fixed;
+    bottom: 20px; /* Position at the bottom of the view */
+    left: 50%; /* Horizontally centered */
+    transform: translateX(-50%);
+    transition: bottom 0.4s ease, transform 0.6s ease, opacity 0.6s ease;
+}
+
+/* Style to rotate the arrow when clicked (pointing up) */
+.arrow img {
+    width: 30px; /* Adjust size if needed */
+    transition: transform 0.4s ease;
+    transform-origin: center; /* Rotate around the center */
+}
+
+/* When scrolling, move the arrow 50px up */
+.arrow.scrolled {
+    bottom: 60px; /* Moves up 50px after scrolling */
+}
+
+.footer{
+    margin-top: 45px;
+}
+@media screen and (max-width: 768px) {
+    .title-container{
+        margin-top: 65px !important;
+    }
+
+    .title-container#first{
+        margin-top: 25px !important;
+        z-index: -2;
+    }
+
+    .title {
+        font-size: 62px;
+    }
+
+    .box{
+        flex: 1 1 auto;
+        max-width: 45%;
+    }
+
+    .list-container{
+        display: block;
+        margin-top: 18px;
+        width: 90%;
+    }
+
+    .list-container ul{
+        margin: 0
+    }
+    
+    .list-container ul:nth-of-type(2){
+        margin-top: 4px;
+    }
+
+    .list-container ul li {
+        font-size: 16px;
+    }
+
+    .prices-description-container{
+        width: 90%;
+    }
+
+    .prices-description-container .prices-description li{
+        padding-right: 7%;
+        margin-top: 15px;
+    }
+
+    .prices-description-wedding {
+        width: 91%;
+    }
+
+    .prices-description{
+        margin-bottom: 0;
+    }
+
+    .prices-list-container{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 65px;
+    }
+
+    .prices-list-container#second{
+        margin-top: 47px;
+    }
+
+    .prices-list-container#second .box {
+        max-width: 67% !important;
+        padding: 15px;
+    }
+
+    .arrow{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+}
